@@ -15,17 +15,19 @@
     height: 100%;
     inset: 0;
     filter: brightness(0.4);
+    z-index: 0;
   }
   p {
+    position: relative;
     font-weight: bold;
     font-size: map-get($map: $font-sizes, $key: "large");
     color: map-get($colors, "white");
-    filter: drop-shadow(0 0 0 map-get($colors, "black"));
     text-shadow:
       1px 1px 0 map-get($colors, "black"),
       -1px 1px 0 map-get($colors, "black"),
       -1px -1px 0 map-get($colors, "black"),
       1px -1px 0 map-get($colors, "black");
+    z-index: 1;
     @media screen and (max-width: 375px) {
       font-size: map-get($map: $font-sizes, $key: "regular");
     }
