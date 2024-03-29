@@ -1,0 +1,18 @@
+footer {
+  background-color: map-get($map: $colors, $key: "black");
+  color: map-get($map: $colors, $key: "white");
+  text-align: center;
+  padding: 60px 0 30px 0;
+  img {
+    margin-bottom: 30px;
+  }
+  p {
+    font-size: map-get($map: $font-sizes, $key: "regular");
+    @media screen and (max-width: 375px) {
+      font-size: map-get($map: $font-sizes, $key: "medium");
+    }
+  }
+  @media screen and (max-width: 375px) {
+    padding: 60px 125px;
+  }
+}
