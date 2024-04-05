@@ -96,7 +96,7 @@ footer p {
 
 .banner {
   width: 100%;
-  min-height: 110px;
+  min-height: 225px;
   padding: 80px 15px;
   position: relative;
   overflow: hidden;
@@ -130,6 +130,7 @@ footer p {
 @media screen and (max-width: 375px) {
   .banner {
     padding: 30px 15px;
+    min-height: 110px;
   }
 }
 
