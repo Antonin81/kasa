@@ -1,4 +1,3 @@
-// import { Link } from "react-router-dom";
 import React from "react";
 import Banner from "../../components/Banner/Banner";
 import HousingCard from "../../components/HousingCard/HousingCard";
@@ -16,7 +15,6 @@ function Home() {
       </React.Fragment>
     );
   }
-
   if (error) {
     return <p>error</p>;
   }

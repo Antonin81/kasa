@@ -26,6 +26,7 @@ header a {
 @media screen and (max-width: 375px) {
   header a {
     font-size: 12px;
+    text-transform: uppercase;
   }
 }
 header a.active {
@@ -84,7 +85,7 @@ footer p {
 }
 @media screen and (max-width: 375px) {
   footer p {
-    font-size: 18px;
+    font-size: 12px;
   }
 }
 @media screen and (max-width: 375px) {
@@ -95,6 +96,7 @@ footer p {
 
 .banner {
   width: 100%;
+  min-height: 110px;
   padding: 80px 15px;
   position: relative;
   overflow: hidden;
@@ -178,6 +180,48 @@ footer p {
   }
 }
 
+.dropdown button {
+  border: none;
+  background-color: #ff6060;
+  color: #fff;
+  cursor: pointer;
+  padding: 10px 15px;
+  border-radius: 5px;
+  font-size: 24px;
+  font-weight: bold;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.dropdown button .dropdown-arrow {
+  transform: rotate(0deg);
+  transition: transform 0.4s;
+}
+@media screen and (max-width: 375px) {
+  .dropdown button .dropdown-arrow {
+    width: 16px;
+  }
+}
+@media screen and (max-width: 375px) {
+  .dropdown button {
+    font-size: 12px;
+  }
+}
+.dropdown .content {
+  overflow: hidden;
+  background-color: #f6f6f6;
+  border-radius: 0 0 5px 5px;
+  height: 0;
+}
+.dropdown.open button .dropdown-arrow {
+  transform: rotate(180deg);
+}
+.dropdown.open .content {
+  height: auto;
+  padding: 20px;
+}
+
 .housing-card-list {
   padding: 50px;
   background-color: #f6f6f6;
@@ -199,6 +243,24 @@ footer p {
     grid-template-columns: 1fr;
     background-color: #fff;
     gap: 20px;
+  }
+}
+
+.dropdowns-container {
+  margin-inline: auto;
+  width: 85%;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin-top: 40px;
+  margin-bottom: 50px;
+}
+@media screen and (max-width: 375px) {
+  .dropdowns-container {
+    gap: 20px;
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
   }
 }
 

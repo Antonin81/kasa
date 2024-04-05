@@ -17,7 +17,7 @@ root.render(
             exact
             path="/"
             element={
-              <Layout>
+              <Layout activeLink={0}>
                 <Home />
               </Layout>
             }
@@ -26,7 +26,7 @@ root.render(
             exact
             path="/a-propos"
             element={
-              <Layout>
+              <Layout activeLink={1}>
                 <More />
               </Layout>
             }
