@@ -11,7 +11,7 @@ function Home() {
     return (
       <React.Fragment>
         {data.map((logement) => {
-          return <HousingCard housing={logement} />;
+          return <HousingCard housing={logement} key={logement.id} />;
         })}
       </React.Fragment>
     );
@@ -23,7 +23,7 @@ function Home() {
 
   return (
     <main>
-      <Banner text={"Chez vous, partout et ailleurs"} />
+      <Banner text={"Chez vous, partout et ailleurs"} img={"img.png"} />
       <div className="housing-card-list">
         {isLoading ? "" : displayCards(data)}
       </div>

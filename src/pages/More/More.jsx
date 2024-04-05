@@ -1,7 +1,9 @@
+import Banner from "../../components/Banner/Banner";
+
 function More() {
   return (
     <main>
-      <p>more</p>
+      <Banner text={""} img={"MoreBanner.png"} />
     </main>
   );
 }
