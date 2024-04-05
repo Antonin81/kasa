@@ -1,11 +1,11 @@
 import { Link } from "react-router-dom";
 
-function HousingCard({ img, link }) {
+function HousingCard({ housing }) {
   return (
-    <Link className="housing-card" to={link}>
-      <img src={img} alt="" />
+    <Link className="housing-card" to={`/fiche-logement/${housing.id}`}>
+      <img src={housing.cover} alt="" />
       <div></div>
-      <p>Titre de la location</p>
+      <p>{housing.title}</p>
     </Link>
   );
 }
