@@ -2,10 +2,10 @@ import Header from "../Header/Header";
 import Footer from "../Footer/Footer";
 import React from "react";
 
-function Layout({ activeLink, children }) {
+function Layout({ children }) {
   return (
     <React.Fragment>
-      <Header activeLink={activeLink} />
+      <Header />
       {children}
       <Footer />
     </React.Fragment>

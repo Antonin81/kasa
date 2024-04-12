@@ -1,26 +1,27 @@
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
-function Header({ activeLink }) {
+function Header() {
+  const { pathname } = useLocation();
+  const headerLinks = [
+    {
+      path: "/",
+      label: "Accueil",
+    },
+    { path: "/a-propos", label: "À propos" },
+  ];
   return (
     <header>
       <img src="Logo.png" alt="" />
       <nav>
-        <Link
-          to={`/`}
-          className={
-            activeLink !== undefined && activeLink === 0 ? "active" : ""
-          }
-        >
-          Accueil
-        </Link>
-        <Link
-          to={`/a-propos`}
-          className={
-            activeLink !== undefined && activeLink === 1 ? "active" : ""
-          }
-        >
-          A Propos
-        </Link>
+        {headerLinks.map((headerLink) => (
+          <Link
+            key={headerLink.path}
+            to={headerLink.path}
+            className={headerLink.path === pathname ? "active" : ""}
+          >
+            {headerLink.label}
+          </Link>
+        ))}
       </nav>
     </header>
   );

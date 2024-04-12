@@ -9,6 +9,7 @@ import Layout from "./components/Layout/Layout";
 import Error from "./pages/Error/Error";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
+
 root.render(
   <React.Fragment>
     <React.StrictMode>
@@ -18,7 +19,7 @@ root.render(
             exact
             path="/"
             element={
-              <Layout activeLink={0}>
+              <Layout>
                 <Home />
               </Layout>
             }
@@ -27,7 +28,7 @@ root.render(
             exact
             path="/a-propos"
             element={
-              <Layout activeLink={1}>
+              <Layout>
                 <More />
               </Layout>
             }

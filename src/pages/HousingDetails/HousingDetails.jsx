@@ -1,11 +1,17 @@
-import { useParams } from "react-router-dom";
+import {
+  // useParams,
+  useLocation,
+} from "react-router-dom";
+import SlideShow from "../../components/SlideShow/SlideShow";
 
 function HousingDetails() {
-  const { selectedHousing } = useParams();
-  console.log(new URLSearchParams(window.location.search));
+  // const { selectedHousing } = useParams();
+  const { state } = useLocation();
+  const { housingData } = state;
   return (
     <main>
-      <p>{selectedHousing}</p>
+      <SlideShow images={housingData.pictures} />
+      <p>{housingData.title}</p>
     </main>
   );
 }
