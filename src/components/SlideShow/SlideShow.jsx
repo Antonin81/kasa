@@ -20,9 +20,6 @@ function SlideShow({ images }) {
       >
         <img src="/slideshow-arrow.png" alt="" />
       </button>
-      <p className="slideshow-counter">
-        {counter + 1}/{nbMax}
-      </p>
       <img src={images[counter]} alt="" />
       <button
         className="slideshow-button slideshow-button-right"
@@ -30,6 +27,9 @@ function SlideShow({ images }) {
       >
         <img src="/slideshow-arrow.png" alt="" />
       </button>
+      <p className="slideshow-counter">
+        {counter + 1}/{nbMax}
+      </p>
     </div>
   );
 }

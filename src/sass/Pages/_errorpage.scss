@@ -20,7 +20,6 @@
   }
   .error-subtitle {
     font-size: map-get($map: $font-sizes, $key: "medium-large");
-    font-weight: 500;
     color: map-get($map: $colors, $key: "primary");
     @media screen and (max-width: 880px) {
       font-size: map-get($map: $font-sizes, $key: "regular");

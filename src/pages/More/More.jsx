@@ -3,7 +3,7 @@ import Collapse from "../../components/Collapse/Collapse";
 
 function More() {
   return (
-    <main>
+    <main className="more-page-main">
       <Banner text={""} img={"MoreBanner.png"} />
       <div className="collapses-container">
         <Collapse

@@ -2,6 +2,7 @@ $border-radius: (
   "x-small": 5px,
   "small": 10px,
   "large": 25px,
+  "huge": 9999px,
 );
 
 $colors: (
@@ -12,7 +13,9 @@ $colors: (
 );
 
 $font-sizes: (
+  "XS": 10px,
   "small": 12px,
+  "medium-small": 14px,
   "medium": 18px,
   "regular": 24px,
   "medium-large": 36px,

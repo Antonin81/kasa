@@ -1,0 +1,132 @@
+.details-page-main {
+  padding-bottom: 50px;
+  .housing-infos {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 30px;
+    padding-bottom: 25px;
+    .first-section {
+      h1 {
+        color: map-get($map: $colors, $key: "primary");
+        font-size: map-get($map: $font-sizes, $key: "medium-large");
+        @media screen and (max-width: 615px) {
+          font-size: map-get($map: $font-sizes, $key: "regular");
+        }
+        @media screen and (max-width: 375px) {
+          font-size: map-get($map: $font-sizes, $key: "medium");
+        }
+      }
+      > p {
+        font-size: map-get($map: $font-sizes, $key: "medium");
+        @media screen and (max-width: 375px) {
+          font-size: map-get($map: $font-sizes, $key: "medium-small");
+        }
+      }
+      .housing-tags {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        padding-top: 20px;
+        .housing-tag {
+          background-color: map-get($map: $colors, $key: "primary");
+          text-align: center;
+          padding: 5px 30px;
+          border-radius: map-get($map: $border-radius, $key: "small");
+          p {
+            color: map-get($map: $colors, $key: "white");
+            font-weight: bold;
+            font-size: map-get($map: $font-sizes, $key: "medium-small");
+            @media screen and (max-width: 375px) {
+              font-size: map-get($map: $font-sizes, $key: "XS");
+            }
+          }
+        }
+        @media screen and (max-width: 615px) {
+          padding-top: 10px;
+        }
+      }
+    }
+    .second-section {
+      .stars {
+        display: flex;
+        gap: 10px;
+        justify-content: end;
+        margin-top: 20px;
+        @media screen and (max-width: 880px) {
+          margin-top: 0;
+        }
+        @media screen and (max-width: 615px) {
+          gap: 5px;
+        }
+        > * {
+          @media screen and (max-width: 615px) {
+            height: 18px;
+          }
+          @media screen and (max-width: 375px) {
+            height: 13px;
+          }
+        }
+      }
+      .host {
+        display: flex;
+        align-items: center;
+        justify-content: end;
+        gap: 10px;
+        .host-name p {
+          color: map-get($map: $colors, $key: "primary");
+          font-size: map-get($map: $font-sizes, $key: "medium");
+          text-align: right;
+          @media screen and (max-width: 615px) {
+            font-size: map-get($map: $font-sizes, $key: "medium-small");
+          }
+          @media screen and (max-width: 375px) {
+            font-size: map-get($map: $font-sizes, $key: "small");
+          }
+        }
+        .host-picture {
+          border-radius: map-get($map: $border-radius, $key: "huge");
+          overflow: hidden;
+          height: 64px;
+          aspect-ratio: 1;
+          > img {
+            height: 100%;
+          }
+          @media screen and (max-width: 375px) {
+            height: 32px;
+          }
+        }
+      }
+      @media screen and (max-width: 880px) {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 15px;
+      }
+    }
+    @media screen and (max-width: 880px) {
+      flex-direction: column;
+      padding-top: 15px;
+      padding-bottom: 15px;
+    }
+  }
+  .collapses-container {
+    display: flex;
+    gap: 75px;
+    .collapse {
+      button p {
+        @media screen and (min-width: 615px) {
+          font-size: map-get($map: $font-sizes, $key: "medium");
+        }
+      }
+    }
+    @media screen and (max-width: 880px) {
+      flex-direction: column;
+      gap: 20px;
+    }
+  }
+
+  @media screen and (max-width: 615px) {
+    padding-bottom: 30px;
+  }
+}
