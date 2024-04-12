@@ -1,4 +1,4 @@
-.dropdown {
+.accordion {
   button {
     border: none;
     background-color: map-get($map: $colors, $key: "primary");
@@ -12,7 +12,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    .dropdown-arrow {
+    .accordion-arrow {
       transform: rotate(0deg);
       transition: transform 0.4s;
       @media screen and (max-width: 375px) {
@@ -24,21 +24,32 @@
     }
   }
   .content {
-    overflow: hidden;
     background-color: map-get($map: $colors, $key: "light-gray");
     border-radius: 0 0 map-get($map: $border-radius, $key: "x-small")
       map-get($map: $border-radius, $key: "x-small");
-    height: 0;
+    display: grid;
+    grid-template-rows: 0fr;
+    transition: 0.4s grid-template-rows;
+    > div {
+      overflow: hidden;
+      .content-padding {
+        padding: 20px;
+        transform: translateY(-100%);
+        transition: transform 0.4s;
+      }
+    }
   }
   &.open {
     button {
-      .dropdown-arrow {
+      .accordion-arrow {
         transform: rotate(180deg);
       }
     }
     .content {
-      height: auto;
-      padding: 20px;
+      grid-template-rows: 1fr;
+      > div .content-padding {
+        transform: translateY(0%);
+      }
     }
   }
 }

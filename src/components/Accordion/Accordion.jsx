@@ -1,19 +1,19 @@
 import { useState } from "react";
 
-function DropDown({ title, texts }) {
+function Accordion({ title, texts }) {
   const [isOpen, setIsOpen] = useState(false);
   let textIndex = 0;
 
-  function handleClickDropDown(e) {
+  function handleClickAccordion(e) {
     setIsOpen(!isOpen);
   }
 
   return (
-    <div className={"dropdown" + (isOpen ? " open" : "")}>
-      <button onClick={handleClickDropDown}>
+    <div className={"accordion" + (isOpen ? " open" : "")}>
+      <button onClick={handleClickAccordion}>
         <p>{title}</p>
         <svg
-          className="dropdown-arrow"
+          className="accordion-arrow"
           width="24"
           height="15"
           viewBox="0 0 24 15"
@@ -27,14 +27,18 @@ function DropDown({ title, texts }) {
         </svg>
       </button>
       <div className="content">
-        {texts.map((text) => {
-          const toReturn = <p key={textIndex}>{text}</p>;
-          textIndex++;
-          return toReturn;
-        })}
+        <div>
+          <div className="content-padding">
+            {texts.map((text) => {
+              const toReturn = <p key={textIndex}>{text}</p>;
+              textIndex++;
+              return toReturn;
+            })}
+          </div>
+        </div>
       </div>
     </div>
   );
 }
 
-export default DropDown;
+export default Accordion;
