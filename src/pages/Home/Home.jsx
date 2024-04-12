@@ -21,7 +21,10 @@ function Home() {
 
   return (
     <main>
-      <Banner text={"Chez vous, partout et ailleurs"} img={"img.png"} />
+      <Banner
+        text={"Chez vous, partout et ailleurs"}
+        img={"img/home-banner.png"}
+      />
       <div className="housing-card-list">
         {isLoading ? "" : displayCards(data)}
       </div>

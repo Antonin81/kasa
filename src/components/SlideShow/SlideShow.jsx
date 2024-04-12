@@ -18,14 +18,14 @@ function SlideShow({ images }) {
         className="slideshow-button slideshow-button-left"
         onClick={changeSlide}
       >
-        <img src="/slideshow-arrow.png" alt="" />
+        <img src="/img/slideshow-arrow.png" alt="" />
       </button>
       <img src={images[counter]} alt="" />
       <button
         className="slideshow-button slideshow-button-right"
         onClick={changeSlide}
       >
-        <img src="/slideshow-arrow.png" alt="" />
+        <img src="/img/slideshow-arrow.png" alt="" />
       </button>
       <p className="slideshow-counter">
         {counter + 1}/{nbMax}

@@ -11,7 +11,7 @@ function Header() {
   ];
   return (
     <header>
-      <img src="Logo.png" alt="" />
+      <img src="img/Logo.png" alt="" />
       <nav>
         {headerLinks.map((headerLink) => (
           <Link
