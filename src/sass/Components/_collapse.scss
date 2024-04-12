@@ -1,0 +1,55 @@
+.collapse {
+  button {
+    border: none;
+    background-color: map-get($map: $colors, $key: "primary");
+    color: map-get($map: $colors, $key: "white");
+    cursor: pointer;
+    padding: 10px 15px;
+    border-radius: map-get($map: $border-radius, $key: "x-small");
+    font-size: map-get($map: $font-sizes, $key: "regular");
+    font-weight: bold;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .collapse-arrow {
+      transform: rotate(0deg);
+      transition: transform 0.4s;
+      @media screen and (max-width: 375px) {
+        width: 16px;
+      }
+    }
+    @media screen and (max-width: 375px) {
+      font-size: map-get($map: $font-sizes, $key: "small");
+    }
+  }
+  .content {
+    background-color: map-get($map: $colors, $key: "light-gray");
+    border-radius: 0 0 map-get($map: $border-radius, $key: "x-small")
+      map-get($map: $border-radius, $key: "x-small");
+    display: grid;
+    grid-template-rows: 0fr;
+    transition: 0.4s grid-template-rows;
+    > div {
+      overflow: hidden;
+      .content-padding {
+        padding: 20px;
+        transform: translateY(-100%);
+        transition: transform 0.4s;
+      }
+    }
+  }
+  &.open {
+    button {
+      .collapse-arrow {
+        transform: rotate(180deg);
+      }
+    }
+    .content {
+      grid-template-rows: 1fr;
+      > div .content-padding {
+        transform: translateY(0%);
+      }
+    }
+  }
+}
