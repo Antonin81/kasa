@@ -11,9 +11,9 @@ function HousingDetails() {
   const rating = [];
   for (let i = 1; i < 6; i++) {
     if (i <= housingData.rating) {
-      rating.push(<img src="img/active-star.png" alt="" />);
+      rating.push(<img src="/img/active-star.png" alt="" />);
     } else {
-      rating.push(<img src="img/inactive-star.png" alt="" />);
+      rating.push(<img src="/img/inactive-star.png" alt="" />);
     }
   }
   return (
