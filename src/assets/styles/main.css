@@ -214,7 +214,7 @@ footer p {
 }
 @media screen and (max-width: 375px) {
   .collapse button {
-    font-size: 14px;
+    font-size: 13px;
   }
 }
 .collapse .content {

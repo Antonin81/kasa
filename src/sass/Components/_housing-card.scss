@@ -41,7 +41,7 @@
     position: relative;
     color: map-get($colors, "white");
     font-weight: bold;
-    font-size: 18px;
+    font-size: map-get($map: $font-sizes, $key: "medium");
     z-index: 1;
   }
   @media screen and (max-width: 375px) {

@@ -24,7 +24,7 @@
       font-size: map-get($map: $font-sizes, $key: "medium");
     }
     @media screen and (max-width: 375px) {
-      font-size: map-get($map: $font-sizes, $key: "medium-small");
+      font-size: map-get($map: $font-sizes, $key: "small");
     }
   }
   .content {
@@ -46,7 +46,7 @@
       }
     }
     @media screen and (max-width: 375px) {
-      font-size: map-get($map: $font-sizes, $key: "small");
+      font-size: map-get($map: $font-sizes, $key: "XS");
     }
   }
   &.open {
