@@ -18,6 +18,7 @@ function SlideShow({ images }) {
         <button
           className="slideshow-button slideshow-button-left"
           onClick={changeSlide}
+          aria-label="Précédent"
         >
           <img src="/img/slideshow-arrow.png" alt="" />
         </button>
@@ -31,6 +32,7 @@ function SlideShow({ images }) {
           <button
             className="slideshow-button slideshow-button-right"
             onClick={changeSlide}
+            aria-label="Suivant"
           >
             <img src="/img/slideshow-arrow.png" alt="" />
           </button>
