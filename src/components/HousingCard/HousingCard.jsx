@@ -7,7 +7,7 @@ function HousingCard({ housing }) {
       to={`/fiche-logement/${housing.id}`}
       state={{ housingData: housing }}
     >
-      <img src={housing.cover} alt="" />
+      <img src={housing.cover} alt={housing.title + " cover img"} />
       <div></div>
       <p>{housing.title}</p>
     </Link>
