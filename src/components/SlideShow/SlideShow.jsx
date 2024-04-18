@@ -1,4 +1,4 @@
-import { useState } from "react";
+import React, { useState } from "react";
 
 function SlideShow({ images }) {
   const [counter, setCounter] = useState(0);
@@ -14,22 +14,33 @@ function SlideShow({ images }) {
 
   return (
     <div className="slideshow">
-      <button
-        className="slideshow-button slideshow-button-left"
-        onClick={changeSlide}
-      >
-        <img src="/img/slideshow-arrow.png" alt="" />
-      </button>
+      {nbMax > 1 ? (
+        <button
+          className="slideshow-button slideshow-button-left"
+          onClick={changeSlide}
+        >
+          <img src="/img/slideshow-arrow.png" alt="" />
+        </button>
+      ) : (
+        <React.Fragment></React.Fragment>
+      )}
+
       <img src={images[counter]} alt="" />
-      <button
-        className="slideshow-button slideshow-button-right"
-        onClick={changeSlide}
-      >
-        <img src="/img/slideshow-arrow.png" alt="" />
-      </button>
-      <p className="slideshow-counter">
-        {counter + 1}/{nbMax}
-      </p>
+      {nbMax > 1 ? (
+        <React.Fragment>
+          <button
+            className="slideshow-button slideshow-button-right"
+            onClick={changeSlide}
+          >
+            <img src="/img/slideshow-arrow.png" alt="" />
+          </button>
+          <p className="slideshow-counter">
+            {counter + 1}/{nbMax}
+          </p>
+        </React.Fragment>
+      ) : (
+        <React.Fragment></React.Fragment>
+      )}
     </div>
   );
 }
