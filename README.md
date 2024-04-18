@@ -5,12 +5,15 @@
 <p align="center">
   <img src="https://user.oc-static.com/upload/2023/04/03/1680512368252_Kasa%20logo.png" alt="Kasa introduction img">
 </p>
-![Kasa introduction img](https://user.oc-static.com/upload/2023/04/03/1680512368252_Kasa%20logo.png)\
 Kasa is a fictive business in online created for the "Développeur d'applications - Javascript React" studies from OpenClassrooms.
 
 ## About the project
 
 The objective of this project consists in creating the interface for their housing website. A [mock-up](https://www.figma.com/file/2BZEoBhyxt5IwZgRn0wGsL/Kasa_FR) and some constraints has been given, like the use of React or Sass.
+
+### Homepage
+
+![Hompage img](image.png)
 
 ## How to work on it
 
