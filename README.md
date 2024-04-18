@@ -2,6 +2,7 @@
 
 ## What is Kasa ?
 
+![Kasa introduction img](https://user.oc-static.com/upload/2023/04/03/1680512368252_Kasa%20logo.png)
 Kasa is a fictive business in online created for the "Développeur d'applications - Javascript React" studies from OpenClassrooms.
 
 ## About the project
@@ -14,7 +15,7 @@ This project uses React, Sass, npm, Eslint and Prettier.
 To work on it, fork the project.
 Here are the executable commands :
 
-### npm start
+### `npm start`
 
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
