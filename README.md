@@ -53,9 +53,10 @@ Compiles in real time your scss files in a css file.
 
 ## Help
 
-You can find help to use these tools by looking at these links :
-React - [React documentation](https://react.dev)
-Sass - [Sass documentation](https://sass-lang.com/documentation/)
-npm - [npm documentation](https://docs.npmjs.com)
-Eslint - [Eslint documentation](https://eslint.org/docs/latest/)
-Prettier - [Prettier documentation](https://prettier.io/docs/en/)
+You can find help to use these tools by looking at these links :\ \
+
+- React - [React documentation](https://react.dev)\
+- Sass - [Sass documentation](https://sass-lang.com/documentation/)\
+- npm - [npm documentation](https://docs.npmjs.com)\
+- Eslint - [Eslint documentation](https://eslint.org/docs/latest/)\
+- Prettier - [Prettier documentation](https://prettier.io/docs/en/)\
