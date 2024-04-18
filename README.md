@@ -15,6 +15,18 @@ The objective of this project consists in creating the interface for their housi
 
 ![Hompage img](public/readme-img/Homepage.png)
 
+### Housing details page
+
+![Hounsing details page img](public/readme-img/Hounsing-details-page.png)
+
+### More infos page
+
+![More infos page img](public/readme-img/More-infos-page.png)
+
+### Error page
+
+![Error page img](public/readme-img/error.png)
+
 ## How to work on it
 
 This project uses React, Sass, npm, Eslint and Prettier.
