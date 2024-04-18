@@ -11,7 +11,7 @@ function Collapse({ title, texts }) {
   return (
     <div className={"collapse" + (isOpen ? " open" : "")}>
       <button onClick={handleClickCollapse}>
-        <p>{title}</p>
+        <span>{title}</span>
         <svg
           className="collapse-arrow"
           width="24"

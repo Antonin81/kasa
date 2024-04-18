@@ -510,7 +510,7 @@ footer p {
   border-radius: 9999px;
   overflow: hidden;
   height: 64px;
-  aspect-ratio: 1;
+  aspect-ratio: 1/1;
 }
 .details-page-main .housing-infos .second-section .host .host-picture > img {
   height: 100%;

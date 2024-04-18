@@ -87,7 +87,7 @@
           border-radius: map-get($map: $border-radius, $key: "huge");
           overflow: hidden;
           height: 64px;
-          aspect-ratio: 1;
+          aspect-ratio: 1/1;
           > img {
             height: 100%;
           }
