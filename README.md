@@ -13,7 +13,7 @@ The objective of this project consists in creating the interface for their housi
 
 ### Homepage
 
-![Hompage img](/readme-img/Homepage.png)
+![Hompage img](public/readme-img/Homepage.png)
 
 ## How to work on it
 
