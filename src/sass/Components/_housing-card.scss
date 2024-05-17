@@ -2,9 +2,6 @@
   position: relative;
   min-height: 340px;
   border-radius: map-get($map: $border-radius, $key: "small");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
   background-color: map-get($colors, "primary");
   overflow: hidden;
   padding: 20px;

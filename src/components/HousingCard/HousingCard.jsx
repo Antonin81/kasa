@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import React from "react";
 
 function HousingCard({ housing }) {
   return (
@@ -7,7 +8,11 @@ function HousingCard({ housing }) {
       to={`/fiche-logement`}
       state={{ housingData: housing }}
     >
-      <img src={housing.cover} alt={housing.title + " cover img"} />
+      {housing.cover ? (
+        <img src={housing.cover} alt="" />
+      ) : (
+        <React.Fragment></React.Fragment>
+      )}
       <div></div>
       <p>{housing.title}</p>
     </Link>
