@@ -4,7 +4,7 @@ import Collapse from "../../components/Collapse/Collapse";
 function More() {
   return (
     <main className="more-page-main">
-      <Banner text={""} img={"img/more-banner.png"} />
+      <Banner text={""} img={"/img/more-banner.png"} />
       <div className="collapses-container">
         <Collapse
           title="Fiabilité"

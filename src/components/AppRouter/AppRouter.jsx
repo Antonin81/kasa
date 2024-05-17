@@ -38,7 +38,7 @@ function AppRouter() {
             />
             <Route
               exact
-              path="/fiche-logement/"
+              path="/fiche-logement/:selectedHousing"
               element={
                 <Layout>
                   <HousingDetails />

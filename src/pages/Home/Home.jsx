@@ -1,11 +1,10 @@
 import React from "react";
 import Banner from "../../components/Banner/Banner";
 import HousingCard from "../../components/HousingCard/HousingCard";
-import { useFetch } from "../../utils/hooks";
+import { useFetchAllHousing } from "../../utils/hooks/useFetchAllHousing";
 
 function Home() {
-  const { data, isLoading, error } = useFetch("data/logements.json");
-
+  const { data, isLoading, error } = useFetchAllHousing();
   function displayCards(data) {
     return (
       <React.Fragment>
@@ -23,7 +22,7 @@ function Home() {
     <main>
       <Banner
         text={"Chez vous, partout et ailleurs"}
-        img={"img/home-banner.png"}
+        img={"/img/home-banner.png"}
       />
       <div className="housing-card-list">
         {isLoading ? "" : displayCards(data)}

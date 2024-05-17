@@ -3,11 +3,7 @@ import React from "react";
 
 function HousingCard({ housing }) {
   return (
-    <Link
-      className="housing-card"
-      to={`/fiche-logement`}
-      state={{ housingData: housing }}
-    >
+    <Link className="housing-card" to={`/fiche-logement/${housing.id}`}>
       {housing.cover ? (
         <img src={housing.cover} alt="" />
       ) : (
