@@ -130,6 +130,7 @@ footer p {
 @media screen and (max-width: 375px) {
   .banner p {
     font-size: 24px;
+    text-shadow: none;
   }
 }
 @media screen and (max-width: 375px) {

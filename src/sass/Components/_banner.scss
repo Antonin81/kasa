@@ -34,6 +34,7 @@
     }
     @media screen and (max-width: 375px) {
       font-size: map-get($map: $font-sizes, $key: "regular");
+      text-shadow: none;
     }
   }
   @media screen and (max-width: 375px) {
