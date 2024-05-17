@@ -313,6 +313,11 @@ footer p {
     height: 20px;
   }
 }
+@media screen and (max-width: 615px) {
+  .slideshow .slideshow-button {
+    padding: 15px 5px;
+  }
+}
 
 .housing-card-list {
   padding: 50px;
@@ -417,6 +422,7 @@ footer p {
 @media screen and (max-width: 615px) {
   .details-page-main .housing-infos .first-section h1 {
     font-size: 24px;
+    padding-bottom: 5px;
   }
 }
 @media screen and (max-width: 375px) {

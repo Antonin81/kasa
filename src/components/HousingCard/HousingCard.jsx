@@ -4,7 +4,7 @@ function HousingCard({ housing }) {
   return (
     <Link
       className="housing-card"
-      to={`/fiche-logement/${housing.id}`}
+      to={`/fiche-logement`}
       state={{ housingData: housing }}
     >
       <img src={housing.cover} alt={housing.title + " cover img"} />
