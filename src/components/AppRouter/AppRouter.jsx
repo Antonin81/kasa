@@ -16,7 +16,7 @@ function AppRouter() {
   return (
     <React.Fragment>
       <React.StrictMode>
-        <Router>
+        <Router basename="/kasa">
           <Routes>
             <Route
               exact
